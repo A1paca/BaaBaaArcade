@@ -53,6 +53,7 @@ const uint32_t configData[] = {
     /* CF2 END */
 };
 #endif
+
 #ifdef DEFINE_CUSTOM_LOGO
 
 const uint8_t xqLogo[] = {
@@ -67,5 +68,9 @@ const uint8_t xqLogo[] = {
 static void customLogo() {
     printicon(0, 0, 1, xqLogo);
 }
+
+#define CUSTOM_LOGO customLogo()
+
 #endif
+
 #endif /* BOARD_H */
