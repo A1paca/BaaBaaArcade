@@ -486,9 +486,9 @@ void draw_drag() {
     drawBar(52, 55, 8);
     drawBar(107, 14, 4);
 
-    print4border(109, 5, 1, "F4");
+    print4border(50, 5, 1, "F411");
     print(112, 40, 8, "v" UF2_VERSION);
-    print(23, 110, 1, "BaaBaaArcade");
+    print(10, 110, 1, "BaaBaaArcade Made By XQAI");
 
     CUSTOM_LOGO;
 
@@ -498,7 +498,7 @@ void draw_drag() {
     printicon(DRAGX + 66, DRAG, 1, arrowLogo);
     printicon(DRAGX + 108, DRAG, 1, pendriveLogo);
     print(10, DRAG - 12, 1, "arcade.uf2");
-    print(98, DRAG - 12, 1, "ARCADE-F4");
+    print(78, DRAG - 12, 1, "BaaBaaArcade");
 
     draw_screen();
 }

@@ -2,11 +2,11 @@
 #define BOARD_H
 
 #define OSC_FREQ 24
-#define USBDEVICESTRING "MVD 1.2"
-#define USBMFGSTRING "Minimum Viable Arcade Device"
+#define USBDEVICESTRING "BBA 0.1"
+#define USBMFGSTRING "BaaBaaArcadeV0.1"
 #define BOARD_FLASH_SECTORS 8
 #define BOARD_FLASH_SIZE (512 * 1024)
-#define BOARD_ID "STM32F411-MVD-v1.2"
+#define BOARD_ID "STM32F411BaaBaaArcadeV0.1"
 
 
 #ifdef DEFINE_CONFIGDATA
@@ -53,5 +53,21 @@ const uint32_t configData[] = {
     /* CF2 END */
 };
 #endif
+#ifdef DEFINE_CUSTOM_LOGO
 
+const uint8_t xqLogo[] = {
+    32,  32,  116, 143, 3,   152, 9,  152, 33,  152, 1,   1,   145, 1,   4,   145, 1,
+    16,  145, 17,  70,  145, 73,  2,  2,   138, 25,  66,  9,   138, 49,  10,  39,  138,
+    105, 98,  30,  1,   72,  13,  96, 39,  64,  88,  121, 124, 9,   36,  91,  16,  136,
+    17,  91,  37,  125, 39,  49,  27, 79,  200, 12,  91,  1,   125, 79,  50,  27,  64,
+    199, 68,  52,  115, 3,   32,  16, 54,  9,   63,  2,   100, 22,  113, 19,  135, 105,
+    124, 30,  1,   32,  12,  96,  9,  138, 89,  80,  9,   140, 105, 15,  2,   140, 17,
+    68,  147, 1,   16,  147, 1,   4,  147, 1,   1,   147, 33,  154, 9,   154, 3,   138};
+
+static void customLogo() {
+    printicon(0, 0, 1, xqLogo);
+}
+
+#define CUSTOM_LOGO customLogo()
+#endif
 #endif /* BOARD_H */
