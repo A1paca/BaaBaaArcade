@@ -488,7 +488,7 @@ void draw_drag() {
 
     print4border(109, 5, 1, "F4");
     print(112, 40, 8, "v" UF2_VERSION);
-    print(23, 110, 1, "arcade.makecode.com");
+    print(23, 110, 1, "BaaBaaArcade");
 
     CUSTOM_LOGO;
 
