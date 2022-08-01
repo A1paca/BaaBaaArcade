@@ -69,5 +69,5 @@ static void customLogo() {
 }
 
 #define CUSTOM_LOGO customLogo()
-#endif
+
 #endif /* BOARD_H */
