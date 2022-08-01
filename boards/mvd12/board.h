@@ -66,7 +66,7 @@ const uint8_t xqLogo[] = {
     68,  147, 1,   16,  147, 1,   4,  147, 1,   1,   147, 33,  154, 9,   154, 3,   138};
 
 static void customLogo() {
-    printicon(0, 0, 1, xqLogo);
+    printicon(30, 5, 1, xqLogo);
 }
 
 #define CUSTOM_LOGO customLogo()
